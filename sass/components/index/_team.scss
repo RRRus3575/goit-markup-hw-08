@@ -1,0 +1,72 @@
+.team {
+  text-align: center;
+  background: #f5f4fa;
+}
+.team-h {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.6667;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.team-li {
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: #ffffff;
+}
+.team-li-h {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.1875;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.specialization {
+  margin-top: 10px;
+  margin-bottom: 16px;
+  line-height: 1.9;
+  color: #757575;
+}
+.msg {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+.link-msg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  color: #afb1b8;
+  border-radius: 25px;
+  transition: color var(--time) var(--timing),
+    background-color var(--time) var(--timing);
+}
+.msg-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+.link-msg {
+  &:hover,
+  &:focus {
+    background-color: var(--color);
+    color: #ffffff;
+  }
+}
+.team-container {
+  margin: 32px 30px;
+}
