@@ -18,32 +18,64 @@
       <header class="header">
         <div class="container header-content">
         <a class="logo head link" href="./index.html"><span class="web">Web</span>Studio</a>
-        <nav>
-          <ul class="navbar ul">
+        <button class="button-mobail js-open-menu" type="button" >
+          <svg class="menu-icon">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+          
+          
+        <div class="menu-container js-menu-container" >
+          <button class="button-mobail menu-icon-close js-close-menu" type="button" >
+          <svg class="menu-icon">
+            <use href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+          <nav>
+            <ul class="navbar">
+              <li class="item">
+                <a href="./index.html" class="nav link accent">Студія</a>
+              </li>
+              <li class="item"><a href="./portfolio.html" class="nav link nav-hover">Портфоліо</a></li>
+              <li class="item"><a href="#contacts" class="nav link nav-hover">Контакти</a></li>
+            </ul>
+          </nav>
+          <div class="flex-wrap">
+          <ul class="contacts">
             <li class="item">
-              <a href="./index.html" class="nav link accent">Студія</a>
+              <a href="mailto:info@devstudio.com" class="link-contact-head link">
+                  <svg class="icon-header mail">
+                    <use href="./images/symbol-defs.svg#icon-mail" ></use>
+                  </svg>
+                
+                info@devstudio.com</a>
             </li>
-            <li class="item"><a href="./portfolio.html" class="nav link nav-hover">Портфоліо</a></li>
-            <li class="item"><a href="#contacts" class="nav link nav-hover">Контакти</a></li>
-          </ul>
-        </nav>
-        <ul class="contacts ul">
-          <li>
-            <a href="mailto:info@devstudio.com" class="link-contact-head link">
-                <svg class="icon-header mail">
-                  <use href="./images/symbol-defs.svg#icon-mail" ></use>
+            <li class="item">
+              <a href="tel:+380961111111" class="link-contact-head link">
+                <svg class="icon-header tel">
+                  <use href="./images/symbol-defs.svg#icon-smartphone" ></use>
                 </svg>
-              
-              info@devstudio.com</a>
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="link-contact-head link">
-              <svg class="icon-header tel">
-                <use href="./images/symbol-defs.svg#icon-smartphone" ></use>
-              </svg>
-              +38 096 111 11 11</a>
-          </li>
-        </ul>
+                +38 096 111 11 11</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu-list">
+            <li class="item">
+          <a href="#" class="mobile-menu-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+            </li>
+            <li class="item">
+              <a href="#" class="mobile-menu-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+            </li>
+            <li class="item">
+              <a href="#" class="mobile-menu-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+            </li>
+            <li class="item">
+              <a href="#" class="mobile-menu-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </li>
+
+          </ul>
+        </div>
+          </div>
+        </div>
         </div>
       </header>
       <main>
@@ -129,12 +161,12 @@
       
         <section class="team section">
           <div class="container">
-          <h2 class="team-h">Наша команда</h2>
-          <ul class="team-ul ul">
-            <li  class="team-li">
+          <h2 class="team-title">Наша команда</h2>
+          <ul class="team-list">
+            <li  class="team-item">
               <img src="./images/igor.jpg" alt="посміхнений хлопець в окулярах" width="270" />
               <div class="team-container">
-              <h3 class="team-li-h">Ігор Дем'яненко</h3>
+              <h3 class="team-item-title">Ігор Дем'яненко</h3>
               <p lang="en" class="specialization">Product Designer</p>
               <ul class="msg ul">
                 <li>
@@ -168,10 +200,10 @@
               </ul>
             </div>
             </li>
-            <li class="team-li">
+            <li class="team-item">
               <img src="./images/olga.jpg" alt="дівчина в окулярах" width="270" />
               <div class="team-container">
-              <h3 class="team-li-h">Ольга Рєпіна</h3>
+              <h3 class="team-item-title">Ольга Рєпіна</h3>
               <p lang="en" class="specialization">Frontend Developer</p>
               <ul class="msg ul">
                 <li>
@@ -205,10 +237,10 @@
               </ul>
             </div>
             </li>
-            <li class="team-li">
+            <li class="team-item">
               <img src="./images/mykola.jpg" alt="хлопець в сорочці" width="270" />
               <div class="team-container">
-              <h3 class="team-li-h">Микола Тарасов</h3>
+              <h3 class="team-item-title">Микола Тарасов</h3>
               <p lang="en" class="specialization">Marketing</p>
               <ul class="msg ul">
                 <li>
@@ -242,10 +274,10 @@
               </ul>
             </div>
             </li>
-            <li class="team-li">
+            <li class="team-item">
               <img src="./images/myhailo.jpg" alt="хлопець у футболці" width="270" />
               <div class="team-container">
-              <h3 class="team-li-h">Михайло Єрмаков</h3>
+              <h3 class="team-item-title">Михайло Єрмаков</h3>
               <p lang="en" class="specialization">UI Designer</p>
               <ul class="msg ul">
                 <li>
@@ -334,6 +366,7 @@
       </main>
     <footer class="footer">
       <div class="container foot">
+        <div class="tablet-box">
         <div>
         <a class="logo-foot link" href="./index.html">
           <span class="web">Web</span>Studio
@@ -390,8 +423,9 @@
       </li>           
       </ul>
     </div>
+  </div>
       <form class="subscribe">
-      <label for="subscribe-email">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</label>
+      <label for="subscribe-email" class="subscribe-title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</label>
       <div class="subscribe-box">
         <input type="email" name="subscribe-email" id="subscribe-email" placeholder="E-mail">
         <button type="submit" class="container-hero__button button-form">Підписатися 
@@ -400,7 +434,7 @@
         </svg>
       </button>
     </form>
-    
+  </div>
     </div>
     </div>
     </footer>
@@ -460,5 +494,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

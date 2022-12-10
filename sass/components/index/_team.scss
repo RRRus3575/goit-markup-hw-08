@@ -2,21 +2,30 @@
   text-align: center;
   background: #f5f4fa;
 }
-.team-h {
-  margin-bottom: 50px;
+.team-title {
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 36px;
-  line-height: 1.6667;
+  font-size: 28px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: #212121;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.6667;
+  }
 }
-.team-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.team-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
 }
-.team-li {
+.team-item {
+  padding-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -24,11 +33,23 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background: #ffffff;
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    margin-left: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
-.team-li-h {
+.team-item-title {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.1875;
+  line-height: 1.19;
   letter-spacing: 0.03em;
   color: #212121;
 }
@@ -42,7 +63,6 @@
   display: flex;
   justify-content: center;
   margin-top: 16px;
-  margin-bottom: 30px;
   gap: 10px;
 }
 .link-msg {
@@ -68,5 +88,7 @@
   }
 }
 .team-container {
-  margin: 32px 30px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
 }
