@@ -1,11 +1,33 @@
 .services {
-  margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 34px;
+  @media screen and (max-width: 760px) {
+    margin-top: 40px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 14px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 32px;
+  }
 }
-
+.services-item {
+  @media screen and (max-width: 760px) {
+    width: 100%;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+}
+.img-hover {
+  img {
+    width: 100%;
+  }
+}
 .portfolio-link {
   &:hover {
     .case {
@@ -34,9 +56,12 @@
 }
 .hover-before {
   position: relative;
-  width: 370px;
+
   height: 294px;
   overflow: hidden;
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 .box-hover {
   position: absolute;
@@ -63,6 +88,14 @@
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+.tech {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 56px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 24px;
+  }
 }
 .portfolio {
   margin-top: 0;

@@ -211,6 +211,11 @@
     flex-grow: 1;
     gap: 50px;
   }
+  @media screen and (max-width: 767px) {
+    .item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
 }
 .flex-wrap {
   @media screen and (min-width: 767px) {

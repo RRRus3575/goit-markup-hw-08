@@ -1,10 +1,16 @@
 .menu {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  @media screen and (max-width: 766px) {
+    width: 326px;
+    justify-content: flex-start;
+  }
 }
 .menu-button {
+  display: block;
   padding: 6px 22px;
-  margin-left: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -14,6 +20,7 @@
   color: #212121;
   border: none;
   border-radius: 4px;
+  background-color: #f5f4fa;
   transition: color var(--time) var(--timing),
     background-color var(--time) var(--timing),
     box-shadow var(--time) var(--timing);
