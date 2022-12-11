@@ -22,12 +22,14 @@
   }
 }
 .subscribe-box {
+  @media screen and (max-width: 1100px) {
+    width: 100%;
+  }
   input {
-    width: 358px;
     height: 50px;
     padding-left: 16px;
     padding-right: 16px;
-    margin-right: 12px;
+
     color: rgba(255, 255, 255, 0.6);
     background-color: #2f303a;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -38,12 +40,15 @@
     @media screen and (max-width: 767px) {
       width: 100%;
       margin-bottom: 20px;
-      margin-right: auto;
-      margin-left: auto;
     }
-    @media screen and (max-width: 1100px) {
+    @media screen and (min-width: 768px) {
       margin-bottom: 20px;
       width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0px;
+      width: 358px;
+      margin-right: 12px;
     }
   }
 }
