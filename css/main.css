@@ -1309,7 +1309,7 @@ footer h2 {
 }
 
 body .modal-open {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 .modal {
@@ -1328,6 +1328,12 @@ body .modal-open {
   border-radius: 4px;
   -webkit-transition: var(--time) var(--timing);
   transition: var(--time) var(--timing);
+}
+@media screen and (max-width: 767px) {
+  .modal {
+    max-width: 100vw;
+    max-height: 100vh;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
