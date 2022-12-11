@@ -284,15 +284,21 @@
   @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     margin-top: 64px;
-    gap: 10px;
-    .item:not(:last-child) {
-      &::after {
-        content: "";
-        display: block;
-        height: 100%;
-        width: 1px;
-        color: rgba(33, 33, 33, 0.2);
+    gap: 20px;
+    .item {
+      position: relative;
+      &:not(:last-child) {
+        &::after {
+          content: "";
+          right: -10px;
+          display: inline-block;
+          position: absolute;
+          height: 22px;
+          width: 1px;
+          background-color: rgba(33, 33, 33, 0.2);
+        }
       }
     }
   }
