@@ -69,20 +69,20 @@ li {
   padding-left: 15px;
   padding-right: 15px;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    width: 480px;
     overflow-x: hidden;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -226,6 +226,7 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    overflow: hidden;
   }
 }
 
@@ -468,6 +469,7 @@ li {
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.02em;
+  line-height: 1.17;
   color: #757575;
   -webkit-transition: color var(--time) var(--timing);
   transition: color var(--time) var(--timing);
@@ -475,13 +477,11 @@ li {
 @media screen and (max-width: 767px) {
   .link-contact-head {
     font-size: 24px;
-    line-height: 1.17;
   }
 }
 @media screen and (min-width: 768px) {
   .link-contact-head {
     font-size: 12px;
-    line-height: 1.17;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -494,7 +494,7 @@ li {
             align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    line-height: 1.2;
+    font-size: 14px;
   }
 }
 
@@ -575,7 +575,7 @@ li {
 .container-hero {
   margin: 0 auto;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 360px) {
   .container-hero {
     width: 360px;
   }
@@ -604,7 +604,6 @@ li {
 }
 @media screen and (max-width: 767px) {
   .section-hero__overlay {
-    max-width: 480px;
     padding-bottom: 118px;
     padding-top: 118px;
   }

@@ -39,6 +39,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    overflow: hidden;
   }
 }
 .head {
@@ -230,23 +231,21 @@
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0.02em;
+  line-height: 1.17;
   color: #757575;
   transition: color var(--time) var(--timing);
   @media screen and (max-width: 767px) {
     font-size: 24px;
-    line-height: 1.17;
   }
   @media screen and (min-width: 768px) {
     font-size: 12px;
-
-    line-height: 1.17;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
-    line-height: 1.2;
+    font-size: 14px;
   }
 }
 .link-contact-head {

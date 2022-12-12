@@ -1,6 +1,6 @@
 .container-hero {
   margin: 0 auto;
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 360px) {
     width: 360px;
   }
   @media screen and (min-width: 1200px) {
@@ -26,7 +26,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   @media screen and (max-width: 767px) {
-    max-width: 480px;
     padding-bottom: 118px;
     padding-top: 118px;
   }
