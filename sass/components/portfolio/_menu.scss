@@ -3,8 +3,12 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 8px;
+  @media screen and (max-width: 400px) {
+    max-width: 100%;
+    justify-content: flex-start;
+  }
   @media screen and (max-width: 766px) {
-    width: 326px;
+    max-width: 326px;
     justify-content: flex-start;
   }
 }
