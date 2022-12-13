@@ -218,6 +218,11 @@
       margin-bottom: 32px;
     }
   }
+  @media screen and (max-width: 1199px) {
+    .item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
 }
 .flex-wrap {
   @media screen and (min-width: 767px) {
